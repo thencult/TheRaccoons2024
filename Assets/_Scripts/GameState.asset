@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbf5eb9fd463a8a46a41d97feba6a8f2, type: 3}
   m_Name: GameState
   m_EditorClassIdentifier: 
-  energy: 100
-  reputation: 25
-  day_mock: 1
+  energy: 165
+  reputation: 70
+  day_mock: 2
