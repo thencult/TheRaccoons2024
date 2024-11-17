@@ -19,7 +19,8 @@ public class TaskManager : MonoBehaviour
     {
         activeTasks.Clear();
 
-        float yOffset = -120f; // Start at the top of the container
+        // Calculate initial offset based on the number of existing tasks
+        float yOffset = -120f * activeTasks.Count; // Adjust as needed for negative or positive stacking
 
         for (int i = 0; i < tasksAmount; i++)
         {
