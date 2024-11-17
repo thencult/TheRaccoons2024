@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Update the project schedule
   description: 
-  duration: 1
+  duration: 30
   energyChange: -8
   reputationChange: 12
   taskType: 0

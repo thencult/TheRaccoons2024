@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Prepare a report
   description: 
-  duration: 2
+  duration: 20
   energyChange: -15
   reputationChange: 20
   taskType: 0

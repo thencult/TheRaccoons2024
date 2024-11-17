@@ -8,14 +8,16 @@ public class Task : MonoBehaviour
     public TaskData taskData;
     public TextMeshProUGUI title;
     public TextMeshProUGUI description;
-/*
-    public GameObject titleObject;
-    public GameObject descriptionObject;*/
+    [SerializeField] private GameStateHolder gameStateHolder;
+    /*
+        public GameObject titleObject;
+        public GameObject descriptionObject;*/
 
     private void Awake()
     {
         title = GetComponentsInChildren<TextMeshProUGUI>()[0];
         description = GetComponentsInChildren<TextMeshProUGUI>()[1];
+        gameStateHolder = Resources.Load<GameStateHolder>("GameState");
 
     }
     private void Update()
@@ -24,7 +26,7 @@ public class Task : MonoBehaviour
     }
     public void AssignText()
     {
-        title.text = taskData.name;
+        title.text = taskData.title;
         description.text = taskData.description;
     }
     
@@ -38,9 +40,13 @@ public class Task : MonoBehaviour
     private void ApplyEffects()
     {
         // Example of applying task effects to the player
-        PlayerStats.Instance.ChangeEnergy(taskData.energyChange);
-        PlayerStats.Instance.ChangeReputation(taskData.reputationChange);
-        PlayerStats.Instance.ChangeTime(taskData.duration);
+        if (gameStateHolder.energy >= taskData.energyChange)
+        {
+            PlayerStats.Instance.ChangeEnergy(taskData.energyChange);
+            PlayerStats.Instance.ChangeReputation(taskData.reputationChange);
+            PlayerStats.Instance.ChangeTime(taskData.duration);
+        }
+
     }
 }
 

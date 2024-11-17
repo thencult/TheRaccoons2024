@@ -9,27 +9,39 @@ public class DragTask : MonoBehaviour, IDragHandler, IPointerDownHandler, IBegin
     [SerializeField] private RectTransform dragRectTransform;
     [SerializeField] private Canvas canvas;
     [SerializeField] private CanvasGroup canvasGroup;
+    [SerializeField] private GameStateHolder gameStateHolder;
 
     void Awake()
     {
         canvas = GameObject.Find("UI").GetComponent<Canvas>();
         dragRectTransform = transform.GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
+        gameStateHolder = Resources.Load<GameStateHolder>("GameState");
+       
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
-        canvasGroup.alpha = 0.6f;
-        canvasGroup.blocksRaycasts = false;
-        dragRectTransform.parent = canvas.transform;
+        if (gameStateHolder.energy >= eventData.pointerDrag.GetComponent<Task>().taskData.energyChange)
+        {
+            canvasGroup.alpha = 0.6f;
+            canvasGroup.blocksRaycasts = false;
+            dragRectTransform.parent = canvas.transform;
+        }
     }
     public void OnDrag(PointerEventData eventData)
     {
-        dragRectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        if (gameStateHolder.energy >= eventData.pointerDrag.GetComponent<Task>().taskData.energyChange)
+        {
+            dragRectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        }
     }
     public void OnEndDrag(PointerEventData eventData)
     {
-        canvasGroup.alpha = 1;
+        if (gameStateHolder.energy >= eventData.pointerDrag.GetComponent<Task>().taskData.energyChange)
+        {
+            canvasGroup.alpha = 1;
         canvasGroup.blocksRaycasts = true;
+        }
     }
     public void OnPointerDown(PointerEventData eventData)
     {

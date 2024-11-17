@@ -37,6 +37,7 @@ public class PlayerStats : MonoBehaviour
         {
             elapsed = elapsed % 1f;
             ChangeTime(1);
+            ChangeEnergy(2);
         }
     }
 

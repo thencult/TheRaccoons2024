@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f872328ec56e8ef48a0d63de842902c0, type: 3}
   m_Name: Client
   m_EditorClassIdentifier: 
-  title: Review the client proposal
+  title: Skip the meeting
   description: 
-  duration: 2
-  energyChange: 18
+  duration: 40
+  energyChange: -18
   reputationChange: -12
   taskType: 0

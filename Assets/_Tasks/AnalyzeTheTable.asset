@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Analyze the table
   description: 
-  duration: 1
+  duration: 20
   energyChange: -10
   reputationChange: 15
   taskType: 0

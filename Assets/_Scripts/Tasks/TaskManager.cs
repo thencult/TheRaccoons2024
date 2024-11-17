@@ -51,7 +51,7 @@ public class TaskManager : MonoBehaviour
         Destroy(task.gameObject);
 
         // Replenish tasks to maintain fixed count
-        if (activeTasks.Count < maxTasks)
+        if (activeTasks.Count < 1)
         {
             GenerateTasks(maxTasks - activeTasks.Count);
         }

@@ -9,6 +9,4 @@ public class GameStateHolder : ScriptableObject
     public float reputation;
     public int day_mock;
 
-    // Update is called once per frame
-    // void Update() {  }
 }
