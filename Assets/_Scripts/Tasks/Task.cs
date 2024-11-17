@@ -23,7 +23,7 @@ public class Task : MonoBehaviour
     public void ExecuteTask()
     {
         // Handle task completion logic
-        Debug.Log($"Task '{taskData.title}' completed!");
+        // Debug.Log($"Task '{taskData.title}' completed!");
         ApplyEffects();
     }
 
@@ -32,6 +32,7 @@ public class Task : MonoBehaviour
         // Example of applying task effects to the player
         PlayerStats.Instance.ChangeEnergy(taskData.energyChange);
         PlayerStats.Instance.ChangeReputation(taskData.reputationChange);
+        PlayerStats.Instance.ChangeTime(taskData.duration);
     }
 }
 
