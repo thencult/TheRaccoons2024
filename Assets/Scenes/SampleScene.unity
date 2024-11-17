@@ -812,7 +812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6239405807574040212, guid: ccb479b8dc7fdff4a866d8fc4666e635, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6489864214117511330, guid: ccb479b8dc7fdff4a866d8fc4666e635, type: 3}
       propertyPath: m_Sprite
@@ -897,7 +897,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1268,7 +1268,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2370,7 +2370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6239405807574040212, guid: ccb479b8dc7fdff4a866d8fc4666e635, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2443,7 +2443,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1543329764
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3133,7 +3133,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3595,8 +3595,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskPool:
   - {fileID: 11400000, guid: f1c928036c9e444489a77d64a6e31fad, type: 2}
-  - {fileID: 11400000, guid: a6700b2902459354490d176efdb0e1cf, type: 2}
+  - {fileID: 11400000, guid: 8d6b174d20d7bb444a129986458a4479, type: 2}
   - {fileID: 11400000, guid: 0ff6b6bac4b974d43b27dd801173c23a, type: 2}
+  - {fileID: 11400000, guid: b13d9eccff88c374fac22f2fd6dd434b, type: 2}
+  - {fileID: 11400000, guid: a6700b2902459354490d176efdb0e1cf, type: 2}
   activeTasks: []
   maxTasks: 3
   taskVisibleObject: {fileID: 3289073451520850838, guid: 8ee419d6c3ed146458f3c846791f5767, type: 3}
@@ -3866,7 +3868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6239405807574040212, guid: ccb479b8dc7fdff4a866d8fc4666e635, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6489864214117511330, guid: ccb479b8dc7fdff4a866d8fc4666e635, type: 3}
       propertyPath: m_Sprite
@@ -4046,7 +4048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6239405807574040212, guid: ccb479b8dc7fdff4a866d8fc4666e635, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6489864214117511330, guid: ccb479b8dc7fdff4a866d8fc4666e635, type: 3}
       propertyPath: m_Sprite

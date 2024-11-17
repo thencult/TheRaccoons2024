@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f872328ec56e8ef48a0d63de842902c0, type: 3}
-  m_Name: GoWalk
+  m_Name: Client
   m_EditorClassIdentifier: 
-  title: Walk
-  description: Go on a walk
-  duration: 1
-  energyChange: 10
-  reputationChange: 0
-  taskType: 1
+  title: Review the client proposal
+  description: 
+  duration: 2
+  energyChange: 18
+  reputationChange: -12
+  taskType: 0

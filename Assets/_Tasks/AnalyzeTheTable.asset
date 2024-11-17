@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f872328ec56e8ef48a0d63de842902c0, type: 3}
-  m_Name: MakeReport
+  m_Name: AnalyzeTheTable
   m_EditorClassIdentifier: 
-  title: Report
-  description: Make a report
-  duration: 6
-  energyChange: -15
-  reputationChange: 6
+  title: Analyze the table
+  description: 
+  duration: 1
+  energyChange: -10
+  reputationChange: 15
   taskType: 0

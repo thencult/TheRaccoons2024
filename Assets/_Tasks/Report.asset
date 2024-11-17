@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f872328ec56e8ef48a0d63de842902c0, type: 3}
-  m_Name: FinishPresentation
+  m_Name: Report
   m_EditorClassIdentifier: 
-  title: Presentation
-  description: Make a presentation
-  duration: 3
-  energyChange: -4
-  reputationChange: 5
+  title: Prepare a report
+  description: 
+  duration: 2
+  energyChange: -15
+  reputationChange: 20
   taskType: 0
