@@ -10,15 +10,21 @@ public class PhoneHandler : MonoBehaviour, IPointerDownHandler
     // Start is called before the first frame update
     void Start()
     {
-        finalPosition = new Vector3(this.transform.position.x, this.transform.position.y + 450, this.transform.position.z);
+        finalPosition = new Vector3(this.transform.position.x, 0, this.transform.position.z);
     }
 
+    float elapsed = 0f;
     // Update is called once per frame
     void Update()
     {
-        if (this.transform.position == finalPosition)
+        if (this.transform.position.y >= finalPosition.y)
         {
-           PlayerStats.Instance.ChangeTime(90);
+            elapsed += Time.deltaTime;
+            if (elapsed >= 1f)
+            {
+                elapsed = elapsed % 1f;
+                PlayerStats.Instance.ChangeTime(8);
+            }
         }
     }
 
@@ -28,7 +34,7 @@ public class PhoneHandler : MonoBehaviour, IPointerDownHandler
             this.transform.position,
             new Vector3(
                 this.transform.position.x,
-                250,
+                100 ,
                 this.transform.position.z
             ),
             25
