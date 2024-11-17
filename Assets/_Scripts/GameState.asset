@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: GameState
   m_EditorClassIdentifier: 
   energy: 100
-  reputation: 20
+  reputation: 25
+  day_mock: 1

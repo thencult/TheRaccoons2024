@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Report
   description: Make a report
-  duration: 5
+  duration: 6
   energyChange: -15
   reputationChange: 6
   taskType: 0

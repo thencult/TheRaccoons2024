@@ -7,6 +7,7 @@ public class GameStateHolder : ScriptableObject
     // Start is called before the first frame update
     public float energy;
     public float reputation;
+    public int day_mock;
 
     // Update is called once per frame
     // void Update() {  }

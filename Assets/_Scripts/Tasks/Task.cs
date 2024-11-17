@@ -23,7 +23,7 @@ public class Task : MonoBehaviour
     public void ExecuteTask()
     {
         // Handle task completion logic
-        Debug.Log($"Task '{taskData.title}' completed!");
+        // Debug.Log($"Task '{taskData.title}' completed!");
         ApplyEffects();
     }
 
