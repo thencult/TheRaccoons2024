@@ -32,6 +32,7 @@ public class Task : MonoBehaviour
         // Example of applying task effects to the player
         PlayerStats.Instance.ChangeEnergy(taskData.energyChange);
         PlayerStats.Instance.ChangeReputation(taskData.reputationChange);
+        PlayerStats.Instance.ChangeTime(taskData.duration);
     }
 }
 

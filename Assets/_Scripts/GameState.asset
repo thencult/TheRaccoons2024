@@ -9,12 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f872328ec56e8ef48a0d63de842902c0, type: 3}
-  m_Name: MakeReport
+  m_Script: {fileID: 11500000, guid: cbf5eb9fd463a8a46a41d97feba6a8f2, type: 3}
+  m_Name: GameState
   m_EditorClassIdentifier: 
-  title: Report
-  description: Make a report
-  duration: 5
-  energyChange: -15
-  reputationChange: 6
-  taskType: 0
+  energy: 100
+  reputation: 20
