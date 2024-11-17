@@ -37,7 +37,7 @@ public class PhoneHandler : MonoBehaviour, IPointerDownHandler
                 100 ,
                 this.transform.position.z
             ),
-            25
+            40
             );  
     }
     public void OnPointerDown(PointerEventData eventData)
